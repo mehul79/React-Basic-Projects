@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Finlandica:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&display=swap');
+
+body{
+    overflow: hidden;
+    font-family: Bytesized, sans-serif
+}
+
+#bg{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 1.25rem;
+  background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+}
+
+#root{
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game{
+    max-width: calc(3 * 100px);
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    /* height: 100%; */
+}
+
+#status{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+#cell{
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    font-size: 36px;
+    border: 2px solid #a0a0a0;
+    transition: background-color 0.3s ease-in-out;
+    accent-color: blue;
+}
+
+#cell:hover{
+    background-color: #d1d1d1 ;
+}
+
+#reset{
+    padding: 3px;
+}
+
+
